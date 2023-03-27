@@ -13,20 +13,20 @@ public class UseAnimalsMain {
         theCat.setName("The Cat ");
         theCow.setName("The Cow ");
 
-        System.out.println();
+        talkingAnimal(theSnake);
+        talkingAnimal(theSheep);
+        talkingAnimal(theDog);
+        talkingAnimal(theCat);
+        talkingAnimal(theCow);
 
-        System.out.print(theSnake.getName() + "Says ");
-        theSnake.speaks();
-        System.out.print(theSheep.getName() + "Says ");
-        theSheep.speaks();
-        System.out.print(theCat.getName() + "Says ");
-        theCat.speaks();
-        System.out.print(theCow.getName() + "Says ");
-        theCow.speaks();
-        System.out.print(theDog.getName() + "Says ");
-        theDog.speaks();
+    }
+
+    public static void talkingAnimal(Animal animal) {
 
         System.out.println();
+
+        System.out.print(animal.getName() + "Says ");
+        animal.speaks();
 
     }
 }
